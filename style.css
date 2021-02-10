@@ -28,6 +28,53 @@
         flex-direction: column;
         height: 5921px;
     }
+    /* SIDEMENU */
+    .sideMenu {
+        /* display: none; */
+    }
+    .side-nav {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 300PX;
+        background: var(--var-lblue);
+        padding:  25px 40px 37px 40px;
+        min-height: 100vh;
+        box-shadow: 3px 2px 0px 60px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        transform: translateX(-130%);
+        transition: 1s;
+    }
+    .sideTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sideBot{
+        margin-top: -90px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sideLink{
+        color: var(--var-white);
+        font-size: 18px;
+        line-height: 17px;
+        margin: 25px 0px;
+        text-decoration: none;    
+    }
+    .divider{
+        height: 0px;
+        left: 40px;
+        border: 1px solid #FFFFFF;
+    }
+    .close:hover {
+        cursor: pointer;
+    }
+    
     /** HEADER **/
     .headerContainer{
         width: 100%;
@@ -444,6 +491,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    .headerRight a{
+        color: var(--var-base);
+        text-decoration: none;
+    }
     .headerBtnDesktop{
         height: 50px;
         width: 165px;
@@ -665,6 +716,7 @@
         align-items: center;
         flex-direction: row;
     }
+
     .questionTitle{
         margin: 0;
         color: var(--var-base);
@@ -681,6 +733,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
     .fQuestionBot p{
         color: var(--var-base);
         font-size: 16px;
@@ -826,4 +879,20 @@
     .MailP{
         font-size: 14px;
     }
+}
+.fQuestionBot{
+    display: none;
+}
+.fQuestionActive{
+    display: block; 
+}
+.qaActive{
+    transform: rotate(180deg);
+}
+.questionInterrogation{
+    font-size: 26px;
+    color: #CDCFD7;
+}
+.questionInterrogationActive{
+    color: #00FF91;
 }
