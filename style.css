@@ -1,0 +1,829 @@
+:root{
+    --var-base: #373F4A;
+    --var-second: #606577;
+    --var-white: #FFFFFF;
+    --var-lblue: #00CFFF;
+    --var-lgreen: #00FF91;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;  
+}
+@media screen and (max-device-width: 320px) {
+    .logo{
+        width: 80%;
+    }
+}
+@media screen and (max-device-width: 425px) {
+    .headerDesktopOption{
+        display: none;
+    }
+    .fQuestionDesktop{
+        display: none;
+    }
+    body{
+        background-color: var(--var-white);
+        display: flex;
+        flex-direction: column;
+        height: 5921px;
+    }
+    /** HEADER **/
+    .headerContainer{
+        width: 100%;
+        height: 80px;
+        background-color: var(--var-white);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .headerLeft{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .headerBtn{
+        height: 44px;
+        width: 100px;
+        border: 1px solid var(--var-base);
+        border-radius: 2.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .headerBtn p{
+        text-align: center;
+        width: 50px;
+        font-size: 14px;
+        color: var(--var-base);
+    }
+
+    /** CONTENT 1 **/
+    .content1Container{
+        position: relative;
+        height: 660px;
+        padding-left: 16px;
+        padding-top: 50px;
+        background: linear-gradient(225deg, var(--var-lblue) 14.29%, var(--var-lgreen) 85.71%);
+        overflow: hidden;
+    }
+    .content1Container h1{
+        font-size: 40px;
+        line-height: 48px;
+        width: 290px;
+        margin: 0;
+        color: var(--var-white);
+        text-shadow: 0px 1.31981px 5.27923px rgba(0, 0, 0, 0.1);
+    }
+    .content1Container p{
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+        width: 275px;
+        margin: 0;
+        color: var(--var-white);
+        text-shadow: 0px 1.31981px 5.27923px rgba(0, 0, 0, 0.1);
+    }
+    .storesContainer{
+        padding-top: 20px;
+        width: 302px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .storesContainer img{
+        z-index: 1;
+    }
+    .parking{
+        position: absolute;
+        width: 120%;
+        bottom: -10px;
+        left: 40px;
+    }
+    /** CONTENT 2 **/
+    .content2Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 3050px;
+        background-color: #fff;
+        padding: 0px 15px 0px 15px;
+    }
+    .step{
+        padding-top: 60px;
+    }
+    .stepHigh{
+        height: 388px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .stepIcon{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(225deg, var(--var-lblue) 14.29%, var(--var-lgreen) 85.71%);
+    }
+    .stepTitle,
+    .stepText,
+    .stepLink{
+        margin: 0;
+    }
+    .stepTitle{
+        font-size: 30px;
+        line-height: 36px;
+        color: var(--var-base);
+        width: 270px;
+    }
+    .stepText{
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--var-second);
+        width: 300px;
+    }
+    .stepLink{
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 17px;
+        color: var(--var-lblue);
+    }
+    .stepLow{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .stepCircle{
+        position: absolute;
+        width: 330px;
+        height: 330px;
+        border: 2px dashed #fff;
+        background:
+        linear-gradient(#fff,#fff) padding-box /* Don't extend this to border */,
+        linear-gradient(to bottom, var(--var-lblue), var(--var-lgreen)) border-box; /*Border-box is not need as it's the default value*/
+        border-radius: 50%;
+    }
+    .stepImg{
+        z-index: 1;
+    }
+    /** Know more **/
+    .knowMore{
+        width: 330px;
+        height: 360px;
+        border-radius: 5px;
+        background-image: url('/images/parking.jpg');
+        overflow: hidden;
+    }
+    .knowMoreContent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(55, 63, 74, .7);
+        color: var(--var-white);
+        padding: 80px 0px 80px 0px;
+        text-align: center;
+
+    }
+    .knowMoreContent h2{
+        margin: 0;
+        font-size: 26px;
+        line-height: 31px;
+    }
+    .knowMoreContent p{
+        font-size: 18px;
+        line-height: 26px;
+        width: 230px;
+    }
+    .knowMoreBtn{
+        width: 165px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+    }
+    /** CONTENT 3 **/
+    .content3Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 920px;
+        background: linear-gradient(225deg, var(--var-lblue) 14.29%, var(--var-lgreen) 85.71%);
+        padding: 80px 15px 80px 15px;
+    }
+    .fQuestionsTitle{
+        width: 200px;
+        margin: 0;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: var(--var-white);
+        margin-bottom: 40px;
+    }
+    .fQuestionsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fQuestion{
+        width: 330px;
+        min-height: 60px;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--var-white);
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .fQLeft{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .questionTitle{
+        margin: 0;
+        color: var(--var-base);
+        padding-left: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .fQuestionTop{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fQuestionBot p{
+        color: var(--var-base);
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .fQOpen .fQuestionTop .fQLeft .questionTitle{
+        font-weight: 700;
+    }
+    /** Content 4**/
+    .content4Container{
+        height: 330px;
+        padding: 100px 0px;
+        background-color: var(--var-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .content4Container h2,
+    .content4Container p{
+        margin: 0;
+    }
+    .content4Container h2{
+        color: var(--var-base);
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center; 
+    }
+    
+    .content4Container p{
+        color: var(--var-second);
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .content4Container .storesContainer{
+        padding: 0;
+    }
+
+    /* *Footer* */
+    .footerContainer{
+        height: 880px;
+        background-color: var(--var-base);
+        padding: 60px 15px;
+    }
+    .footerHigh{
+        height: 171px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh p{
+        width: 270px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--var-white);
+    }
+    .footerSocialContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 190px;
+        height: 40px;
+    }
+    .social{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--var-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerSubtitle,.footerMailContainer{
+        margin-top: 40px;
+    }
+    .footerSubtitle h4,
+    .footerSubtitle p,
+    .footerMailContainer h4,
+    .footerMailContainer p{
+        margin: 0;
+    }
+    .footerSubtitle h4,.footerMailContainer h4{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        background: -webkit-linear-gradient(180deg, var(--var-lblue), var(--var-lgreen));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .footerSubtitle p{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--var-white);
+    }
+    .footerMailContainer p{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 26px;
+        width: 250px;
+        color: var(--var-white);
+    }
+    .footerMail {
+        margin-top: 20px;
+        width: 276px;
+        height: 45px;
+        border-radius: 5px;
+        background-color: var(--var-white);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .mailSend{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(225deg, #00CFFF 14.29%, #00FF91 85.71%);
+        border-radius: 0px 5px 5px 0px;
+    }
+    .footerMail input{
+        font-family: 'Nunito', sans-serif;
+        padding-left: 15px;
+        font-size: 14px;
+        width: 200px;
+    }
+    .mailSend img{
+        margin-left: -3px;
+    }
+    .MailP{
+        font-size: 14px;
+    }
+}
+@media screen and (min-device-width: 1024px) {
+    body{
+        background-color: var(--var-white);
+        display: flex;
+        flex-direction: column;
+        height: 5000px;
+    }
+    .headerContainer{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 122px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .burger{
+        display: none;
+    }
+    .headerBtn{
+        display: none;
+    }
+    .headerRight{
+        width: 620px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .headerBtnDesktop{
+        height: 50px;
+        width: 165px;
+        border: 1px solid var(--var-base);
+        border-radius: 2.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .headerBtnDesktop p{
+        text-align: center;
+        font-size: 16px;
+        color: var(--var-base);
+    }
+    .content1Container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 650px;
+        background: linear-gradient(225deg, var(--var-lblue) 14.29%, var(--var-lgreen) 85.71%);
+        overflow: hidden;
+        padding: 110px 0px 0px 120px;
+    }
+    .content1Container h1{
+        margin: 0;
+        width: 375px;
+        height: 186px;
+        font-size: 52px;
+        line-height: 62px;
+        color: var(--var-white);
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .content1Container p{
+        margin: 0;
+        width: 440px;
+        height: 120px;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    .storesContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 350px;
+        height: 50px;
+    }
+    .stores{
+        width: 170px;
+        height: 50px;
+    }
+    .parking{
+        position: absolute;
+        right: 0;
+    }
+
+    /* *CONTENT 2* */
+    .content2Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2540px;
+        background-color: #fff;
+        padding: 130px 186px 0px 186px;
+    }
+    .step{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 894px;
+        margin-bottom: 80px;
+    }
+    .step.inverse{
+        flex-direction: row;
+    }
+    .stepHigh{
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .stepIcon{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(225deg, var(--var-lblue) 14.29%, var(--var-lgreen) 85.71%);
+    }
+    .stepTitle,
+    .stepText,
+    .stepLink{
+        margin: 0;
+    }
+    .stepTitle{
+        font-size: 42px;
+        line-height: 50px;
+        color: var(--var-base);
+        width: 390px;
+    }
+    .stepText{
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--var-second);
+        width: 466px;
+    }
+    .stepLink{
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 17px;
+        color: var(--var-lblue);
+    }
+    .stepLow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .stepCircle{
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        border: 2px dashed #fff;
+        background:
+        linear-gradient(#fff,#fff) padding-box /* Don't extend this to border */,
+        linear-gradient(to bottom, var(--var-lblue), var(--var-lgreen)) border-box; /*Border-box is not need as it's the default value*/
+        border-radius: 50%;
+    }
+    .stepImg{
+        width: 315px;
+        z-index: 1;
+    }
+    /** Know more **/
+    .knowMore{
+        width: 1196px;
+        height: 360px;
+        border-radius: 5px;
+        background-image: url('/images/parking.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .knowMoreContent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(55, 63, 74, .7);
+        color: var(--var-white);
+        padding: 80px 0px 80px 0px;
+        text-align: center;
+
+    }
+    .knowMoreContent h2{
+        margin: 0;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .knowMoreContent p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .knowMoreBtn{
+        width: 165px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+    }
+    .content3Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 940px;
+        background: linear-gradient(225deg, var(--var-lblue) 14.29%, var(--var-lgreen) 85.71%);
+        padding: 124px 122px;
+    }
+    .fQuestionsTitle{
+        margin: 0;
+        font-size: 42px;
+        line-height: 36px;
+        text-align: center;
+        color: var(--var-white);
+        margin-bottom: 40px;
+    }
+    .fQuestionsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fQuestion,
+    .fQuestionDesktop{
+        width: 1196px;
+        min-height: 70px;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--var-white);
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .fQLeft{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .questionTitle{
+        margin: 0;
+        color: var(--var-base);
+        padding-left: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .fQuestionTop{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fQuestionBot p{
+        color: var(--var-base);
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .fQOpen .fQuestionTop .fQLeft .questionTitle{
+        font-weight: 700;
+    }
+
+    /** Content 4**/
+    .content4Container{
+        height: 420px;
+        padding: 120px 0px;
+        background-color: var(--var-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .content4Container h2,
+    .content4Container p{
+        margin: 0;
+    }
+    .content4Container h2{
+        color: var(--var-base);
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center; 
+    }
+    .content4Container p{
+        color: var(--var-second);
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .content4Container .storesContainer{
+        padding: 0;
+    }
+
+
+    /* *Footer* */
+    .footerContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 350px;
+        background-color: var(--var-base);
+        padding: 80px 122px;
+    }
+    .footerHigh{
+        height: 171px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh p{
+        width: 270px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--var-white);
+    }
+    .footerSocialContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 190px;
+        height: 40px;
+    }
+    .social{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--var-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLow{
+        display: flex;
+        flex-direction: row;
+        width: 890px;
+        justify-content: space-between;
+    }
+    .footerSubtitle h4,
+    .footerSubtitle p,
+    .footerMailContainer h4,
+    .footerMailContainer p{
+        margin: 0;
+    }
+    .footerSubtitle h4,.footerMailContainer h4{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        background: -webkit-linear-gradient(180deg, var(--var-lblue), var(--var-lgreen));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .footerSubtitle p{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--var-white);
+    }
+    .footerMailContainer p{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 26px;
+        width: 250px;
+        color: var(--var-white);
+    }
+    .footerMail {
+        margin-top: 20px;
+        width: 276px;
+        height: 45px;
+        border-radius: 5px;
+        background-color: var(--var-white);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .mailSend{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(225deg, #00CFFF 14.29%, #00FF91 85.71%);
+        border-radius: 0px 5px 5px 0px;
+    }
+    .footerMail input{
+        font-family: 'Nunito', sans-serif;
+        padding-left: 15px;
+        font-size: 14px;
+        width: 200px;
+    }
+    .mailSend img{
+        margin-left: -3px;
+    }
+    .MailP{
+        font-size: 14px;
+    }
+}
