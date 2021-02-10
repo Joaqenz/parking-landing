@@ -6,13 +6,8 @@ burger.addEventListener('click', function(){
     menu.style.transform = 'translateX(0%)';
 })
 cross.addEventListener('click', function(){
-    menu.style.transform = 'translateX(-130%)';
+    menu.style.transform = 'translateX(-200%)';
 })
-
-
-
-
-
 
 let q1 = document.querySelector('.q1')
 let q1bot = document.querySelector('.q1bot')
