@@ -16,6 +16,7 @@
     }
 }
 @media screen and (max-device-width: 425px) {
+
     .headerDesktopOption{
         display: none;
     }
@@ -461,6 +462,9 @@
     }
 }
 @media screen and (min-device-width: 1024px) {
+    .sideMenu{
+        display: none;
+    }
     body{
         background-color: var(--var-white);
         display: flex;
