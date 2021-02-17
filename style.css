@@ -327,9 +327,9 @@
         font-size: 16px;
         line-height: 24px;
     }
-    .fQOpen .fQuestionTop .fQLeft .questionTitle{
+    /* .fQOpen .fQuestionTop .fQLeft .questionTitle{
         font-weight: 700;
-    }
+    } */
     /** Content 4**/
     .content4Container{
         height: 330px;
@@ -743,9 +743,9 @@
         font-size: 16px;
         line-height: 24px;
     }
-    .fQOpen .fQuestionTop .fQLeft .questionTitle{
+    /* .fQOpen .fQuestionTop .fQLeft .questionTitle{
         font-weight: 700;
-    }
+    } */
 
     /** Content 4**/
     .content4Container{
@@ -887,16 +887,32 @@
 .fQuestionBot{
     display: none;
 }
-.fQuestionActive{
-    display: block; 
-}
-.qaActive{
-    transform: rotate(180deg);
-}
 .questionInterrogation{
     font-size: 26px;
     color: #CDCFD7;
 }
-.questionInterrogationActive{
+/* .fQuestionActive{
+    display: block; 
+} */
+/* .qaActive{
+    transform: rotate(180deg);
+} */
+/* .questionInterrogationActive{
     color: #00FF91;
+} */
+
+.fQuestion.open .fQuestionBot{
+    display: block;
+}
+
+.fQuestion.open .fQuestionTop .fQLeft .questionTitle{
+    font-weight: 700;
+}
+
+.fQuestion.open .questionInterrogation{
+    color: #00FF91;
+}
+
+.fQuestion.open .questionArrow{
+    transform: rotate(180deg);
 }
